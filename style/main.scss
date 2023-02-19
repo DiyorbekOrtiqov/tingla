@@ -1,0 +1,245 @@
+$mainColor: #0f0f54;
+$payColor: #f9e0c7;
+$regColor: #f8f8f8;
+.container {
+  margin: 0 100px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  .col-md-6 {
+    width: 50%;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+body {
+  header {
+    position: relative;
+    .squ {
+      position: absolute;
+      top: 10px;
+      right: 400px;
+    }
+    .turb {
+      position: absolute;
+      bottom: 50px;
+      left: 100px;
+    }
+    .shape {
+      position: absolute;
+      bottom: 10px;
+      right: 100px;
+    }
+    nav {
+      padding-top: 10px;
+    }
+    .text {
+      padding-top: 200px;
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    button {
+      background: $mainColor;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  .video {
+    margin-top: 100px;
+    .video-div {
+      position: relative;
+      .video-img {
+        opacity: 0.9;
+      }
+      .play {
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+        top: 50%;
+        margin-top: -50px;
+      }
+    }
+  }
+
+  .aboute {
+    margin-top: 300px;
+    height: 400px;
+    background-color: $mainColor;
+    padding: 40px 50px;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    position: relative;
+    .squ {
+      position: absolute;
+      top: -150px;
+      right: 60%;
+    }
+    h1 {
+      padding-top: 70px;
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+    img {
+      position: absolute;
+      top: -230px;
+      right: 100px;
+    }
+  }
+
+  .preference {
+    margin-top: 200px;
+    position: relative;
+    .shapesh {
+      position: absolute;
+      bottom: -40px;
+      left: 40px;
+    }
+    .text {
+      background-image: url("../images/Shadow.png");
+      background-position: center center;
+      background-size: cover;
+      h1 {
+        padding-top: 70px;
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .pay {
+    margin-top: 300px;
+    height: 400px;
+    background-color: $payColor;
+    padding: 40px 50px;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    .shape {
+      position: absolute;
+      bottom: -220px;
+      right: 70px;
+    }
+    h1 {
+      padding-top: 70px;
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .payImg {
+      position: absolute;
+      top: -230px;
+      right: 100px;
+    }
+  }
+
+  .register {
+    margin-top: 300px;
+    background-color: $regColor;
+    padding: 40px 50px;
+    padding-bottom: 0;
+    color: rgb(22, 22, 22);
+    position: relative;
+    border-radius: 10px;
+    .squ {
+      position: absolute;
+      bottom: 10px;
+      left: -120px;
+    }
+    .icons {
+      margin-top: 30px;
+    }
+    h1 {
+      padding-top: 90px;
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  footer {
+    padding: 30px 0;
+    .row {
+      justify-content: space-between;
+    }
+    .huquqlar {
+      margin-top: 20px;
+    }
+    .qoida {
+      li {
+        margin-top: 10px;
+        a {
+          color: black;
+        }
+      }
+    }
+    .phone {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 10px;
+      }
+      p {
+        color: gray;
+      }
+      a {
+        color: black;
+        font-size: 18px;
+      }
+    }
+    .icons {
+      display: flex;
+      margin-top: 20px;
+      li {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 575px){ 
+  .text{
+    h1{
+      size: 50px;
+    }
+
+  }
+
+  .aboute{
+    height: 850px;
+    padding-top: 500px;
+  }
+
+
+  .phonee{
+    margin-bottom:100px ;
+    
+  }
+
+}
